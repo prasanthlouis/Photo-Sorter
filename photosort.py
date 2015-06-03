@@ -12,7 +12,7 @@ old=""
 new=""
 
 
-lis=os.listdir('C:\Users\Prasanth\Desktop\New folder\\')
+lis=os.listdir('C:\New folder\\')
 lis.sort()
 for x in lis:
 	if x==__file__:
@@ -28,7 +28,7 @@ for x in lis:
 		#shutil.move(x, destinationDir)
 	#else:
 	#new=str(dt.month)+'-'+str(dt.day)+'-'+str(dt.year)
-	destinationDir='C:\Users\Prasanth\Desktop\New folder\\'+str(dt.month)+'-'+str(dt.day)+'-'+str(dt.year)
+	destinationDir='C:\New folder\\'+str(dt.month)+'-'+str(dt.day)+'-'+str(dt.year)
 	if not os.path.exists(destinationDir): 
 		os.makedirs(destinationDir)
 	shutil.move(x, destinationDir)
